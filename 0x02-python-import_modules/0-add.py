@@ -1,9 +1,10 @@
+#!/usr/bin/python3
 
-alist = ['r', 'c', 'a', 'b', "C", "a", 'c']
-while "c" in alist:
-    del alist[alist.index('c')]
+if __name__ == "__main__":
+    """add and print 1 and 2"""
+    from add_0 import add
 
-while "C" in alist:
-    del alist[alist.index('C')]
+    a = 1
+    b = 2
 
-print(alist)
+    print("{} + {} = {}".format(a, b, add(a, b)))
