@@ -9,6 +9,7 @@ def print_reversed_list_integer(my_list=[]):
     Returns:
         null
     """
-    my_list.reverse()
-    for int in my_list:
-        print("{:d".format(int))
+    if len(my_list) >= 1:
+        my_list.reverse()
+        for int in my_list:
+            print("{:d}".format(int))
