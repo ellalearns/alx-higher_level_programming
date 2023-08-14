@@ -10,9 +10,11 @@ def print_matrix_integer(matrix=[[]]):
     Returns:
         null
     """
-    for matrium in matrix:
-        for elem in matrium:
-            if matrium.index(elem) == len(matrium) - 1:
-                print("{:d}".format(elem), end="\n")
-            else:
-                print("{:d}".format(elem), end=" ")
+    if type(matrix) is list:
+        for matrium in matrix:
+            if type(matrium) is list:
+                for elem in matrium:
+                    if matrium.index(elem) == len(matrium) - 1:
+                        print("{:d}".format(elem), end="\n")
+                    else:
+                        print("{:d}".format(elem), end=" ")
