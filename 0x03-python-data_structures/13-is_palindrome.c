@@ -16,7 +16,7 @@ int is_palindrome(listint_t **head)
 
     if (*head == NULL)
     {
-        return 1;
+        return (1);
     }
 
     number_of_nodes = 0;
@@ -30,7 +30,7 @@ int is_palindrome(listint_t **head)
 
     if (number_of_nodes % 2 != 0)
     {
-        return 0;
+        return (0);
     }
 
     left = 0;
@@ -61,12 +61,12 @@ int is_palindrome(listint_t **head)
 
         if (current_left != current_right)
         {
-            return 0;
+            return (0);
         }
 
         left++;
         right--;
     }
 
-    return 1;
+    return (1);
 }
