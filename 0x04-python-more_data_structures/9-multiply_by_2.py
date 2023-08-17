@@ -5,6 +5,7 @@ def multiply_by_2(a_dictionary):
     returns a new dict
     """
     new_dict = a_dictionary
-    for key in new_dict:
+    all_keys = sorted(a_dictionary)
+    for key in all_keys:
         new_dict[key] *= 2
     return new_dict
