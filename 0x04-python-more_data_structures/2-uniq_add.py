@@ -27,4 +27,4 @@ def uniq_add(my_list=[]):
         else:
             total += x
 
-    return new_list, mto, added, total
+    return total
