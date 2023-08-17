@@ -3,7 +3,7 @@
 def complex_delete(a_dictionary, value):
     """deletes all keys with specific value
     """
-    all_keys = sorted(a_dictionary)
+    all_keys = list(a_dictionary.keys())
     for key in all_keys:
         if a_dictionary[key] == value:
             del a_dictionary[key]
