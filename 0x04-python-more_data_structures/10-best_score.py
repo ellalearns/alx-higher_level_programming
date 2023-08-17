@@ -13,4 +13,6 @@ def best_score(a_dictionary):
             if a_dictionary[key] > high_score:
                 high_score = a_dictionary[key]
 
-    return high_score
+        for key, value in a_dictionary.items():
+            if value == high_score:
+                return key
