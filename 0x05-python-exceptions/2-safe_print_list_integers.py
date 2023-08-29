@@ -8,14 +8,14 @@ def safe_print_list_integers(my_list=[], x=0):
     :return: real number of integers printed
     """
     counter = 0
+    final_counter = 0
     while counter < x:
         try:
             print("{:d}".format(my_list[counter]), end="")
             counter += 1
-        except IndexError:
-            return counter
+            final_counter += 1
         except (ValueError, TypeError):
             counter += 1
             pass
-    print("\n")
-    return counter
+    print("", end="\n")
+    return final_counter
