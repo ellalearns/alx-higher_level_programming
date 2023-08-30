@@ -44,3 +44,18 @@ class Square:
         """
         area = self.__size ** 2
         return area
+
+    def my_print(self):
+        """
+        prints square to stdout in python
+        :return: no return
+        """
+        if self.size == 0:
+            print("")
+        else:
+            counter = 0
+            current_size = self.size
+            line = "#" * current_size
+            while counter < current_size:
+                print(line)
+                counter += 1
