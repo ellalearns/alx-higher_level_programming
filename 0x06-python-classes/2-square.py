@@ -13,7 +13,7 @@ class Square:
         This is the initialization function
         :param size: a private instance attribute
         """
-        if type(size) != int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")

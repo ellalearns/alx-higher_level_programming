@@ -13,11 +13,29 @@ class Square:
         This is the initialization function
         :param size: a private instance attribute
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
         self.__size = size
+
+    @property
+    def size(self):
+        """
+        returns the value of size
+        :return: returns size
+        """
+        size_gotten = self.__size
+        return size_gotten
+
+    @size.setter
+    def size(self, value):
+        """
+        sets the size value
+        :param value: the value to set size
+        :return: no return
+        """
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     def area(self):
         """
@@ -26,3 +44,5 @@ class Square:
         """
         area = self.__size ** 2
         return area
+
+
