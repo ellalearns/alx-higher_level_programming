@@ -109,7 +109,3 @@ class Rectangle:
             return ""
         ash = "#"
         return "{}\n".format(ash*self.__width)*self.__height
-
-
-my_rectangle = Rectangle(0, 4)
-print(str(my_rectangle))
