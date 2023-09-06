@@ -108,4 +108,5 @@ class Rectangle:
         if self.__width == 0:
             return ""
         ash = "#"
-        return ("{}\n".format(ash*self.__width)*(self.__height - 1)) + "{}".format(ash*self.__width)
+        return ("{}\n".format(ash*self.__width)*(self.__height - 1)) + \
+            "{}".format(ash*self.__width)
