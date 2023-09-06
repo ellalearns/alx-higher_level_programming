@@ -103,7 +103,13 @@ class Rectangle:
         str method to officially and nicely print
         :return: __str__ method
         """
-        if self.__height == 0 or self.__width == 0:
+        if self.__height == 0:
+            return ""
+        if self.__width == 0:
             return ""
         ash = "#"
         return "{}\n".format(ash*self.__width)*self.__height
+
+
+my_rectangle = Rectangle(0, 4)
+print(str(my_rectangle))
