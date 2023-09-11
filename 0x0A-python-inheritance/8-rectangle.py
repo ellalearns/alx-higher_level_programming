@@ -9,9 +9,10 @@ class Rectangle(BG):
     """
     rectangle subclass  class
     """
-    def __init__(self, width, height):
-        if BG.integer_validator(width):
-            self.__width = width
 
-        if BG.integer_validator(height):
-            self.__height = height
+    def __init__(self, width, height):
+        BG.integer_validator(width)
+        self.__width = width
+
+        BG.integer_validator(height)
+        self.__height = height
