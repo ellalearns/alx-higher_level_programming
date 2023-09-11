@@ -12,9 +12,9 @@ class Rectangle(BG):
 
     def __init__(self, width, height):
         super().integer_validator("my_width", width)
-        super().__width = width
+        self.__width = width
 
-        self.integer_validator("my_height", height)
+        super().integer_validator("my_height", height)
         self.__height = height
 
     def area(self):
