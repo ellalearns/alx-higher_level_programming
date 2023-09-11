@@ -11,8 +11,8 @@ class Rectangle(BG):
     """
 
     def __init__(self, width, height):
-        self.integer_validator("my_width", width)
-        self.__width = width
+        super().integer_validator("my_width", width)
+        super().__width = width
 
         self.integer_validator("my_height", height)
         self.__height = height
