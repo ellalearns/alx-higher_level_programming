@@ -4,7 +4,7 @@ uses issubclass to check if an obj is a subclass of a_class
 """
 
 
-def is_same_class(obj, a_class):
+def inherits_from(obj, a_class):
     """
     returns true or false if obj is a subclass of a_class
     :param obj: the object
