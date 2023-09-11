@@ -121,3 +121,8 @@ class Rectangle:
         ash = "#"
         return ("{}\n".format(ash*self.__width)*(self.__height - 1)) + \
             "{}".format(ash*self.__width)
+
+
+my_rectangle = Rectangle(2, 4)
+print(str(my_rectangle))
+print(repr(my_rectangle))
