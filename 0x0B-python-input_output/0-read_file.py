@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+read a text file, basic
+"""
 
 
 def read_file(filename=""):
