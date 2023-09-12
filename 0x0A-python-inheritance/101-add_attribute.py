@@ -31,3 +31,5 @@ def add_attribute(class_ins, attr_name, attr_value):
         raise TypeError("can't add new attribute")
 
     setattr(class_ins, attr_name, attr_value)
+
+    return class_ins
