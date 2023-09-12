@@ -12,11 +12,6 @@ def add_attribute(class_ins, attr_name, attr_value):
     :param attr_value: value of attribute
     :return: obj class
     """
-    if not hasattr(class_ins, "__dict__"):
-        raise TypeError("can't add new attribute")
-    else:
-        setattr(class_ins, attr_name, attr_value)
-
     if type(class_ins) is str or type(class_ins) is int:
         raise TypeError("can't add new attribute")
 
@@ -32,6 +27,7 @@ def add_attribute(class_ins, attr_name, attr_value):
     if hasattr(class_ins, attr_name):
         raise TypeError("can't add new attribute")
 
-    setattr(class_ins, attr_name, attr_value)
+    if not hasattr(class_ins, "__dict__"):
+        raise TypeError("can't add new attribute")
 
-    return class_ins
+    setattr(class_ins, attr_name, attr_value)
