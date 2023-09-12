@@ -11,4 +11,4 @@ def from_json_string(my_str):
     :param my_str: the json string
     :return: json object
     """
-    return json.load(my_str)
+    return json.loads(my_str)
