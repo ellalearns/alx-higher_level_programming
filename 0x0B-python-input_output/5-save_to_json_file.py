@@ -5,7 +5,7 @@ save an object to text file in json rep
 import json
 
 
-def save_to_json(my_obj, filename):
+def save_to_json_file(my_obj, filename):
     """
     write obj to txt file in json representation
     :param my_obj: the object
