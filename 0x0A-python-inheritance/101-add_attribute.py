@@ -21,7 +21,7 @@ def add_attribute(class_ins, attr_name, attr_value):
     elif type(class_ins) is float or type(class_ins) is None:
         raise TypeError("can't add new attribute")
 
-    if not hasattr(class_ins, attr_name):
+    if not hasattr(class_ins, "__dict__"):
         raise TypeError("can't add new attribute")
 
     class_ins[attr_name] = attr_value
