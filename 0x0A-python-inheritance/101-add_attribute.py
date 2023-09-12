@@ -15,10 +15,10 @@ def add_attribute(class_ins, attr_name, attr_value):
     if type(class_ins) is str or type(class_ins) is int:
         raise TypeError("can't add new attribute")
 
-    elif type(class_ins) is tuple:
+    if type(class_ins) is tuple:
         raise TypeError("can't add new attribute")
 
-    elif type(class_ins) is float or type(class_ins) is None:
+    if type(class_ins) is float or type(class_ins) is None:
         raise TypeError("can't add new attribute")
 
     if not hasattr(class_ins, attr_name):
