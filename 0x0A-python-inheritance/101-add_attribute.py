@@ -24,6 +24,9 @@ def add_attribute(class_ins, attr_name, attr_value):
     if not hasattr(class_ins, attr_name):
         raise TypeError("can't add new attribute")
 
+    if hasattr(class_ins, attr_name):
+        raise TypeError("can't add new attribute")
+
     if not hasattr(class_ins, "__dict__"):
         raise TypeError("can't add new attribute")
 
