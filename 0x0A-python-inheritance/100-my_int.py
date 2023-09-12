@@ -9,13 +9,9 @@ class MyInt(int):
     not empty
     """
     def __eq__(self, other):
-        return super().__ne__(other)
+        result = super().__ne__(other)
+        return result
 
     def __ne__(self, other):
-        return super().__eq__(other)
-
-
-my_i = MyInt(3)
-print(my_i)
-print(my_i == 3)
-print(my_i != 3)
+        result = super().__eq__(other)
+        return result
