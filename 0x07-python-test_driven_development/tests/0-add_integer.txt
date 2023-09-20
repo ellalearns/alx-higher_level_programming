@@ -15,3 +15,5 @@ Add Integers
 <class 'int'>
 >>> print(add_integer(2, 5))
 7
+>>> print(add_integer(2.5, 0.7))
+2
