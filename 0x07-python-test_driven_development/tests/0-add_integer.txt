@@ -17,3 +17,12 @@ Add Integers
 7
 >>> print(add_integer(2.5, 0.7))
 2
+>>> add_integer(7, "seven")
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer(float('inf'), 50)
+Traceback (most recent call last):
+OverflowError: cannot infinity to integer
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer

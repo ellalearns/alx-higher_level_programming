@@ -13,6 +13,10 @@ def add_integer(a, b=98):
 
     Return: an integer
     """
+    if a == float('inf'):
+        raise OverflowError("cannot infinity to integer")
+    if a == float('Nan'):
+        raise ValueError("cannot convert float NaN to integer")
     if not isinstance(a, int):
         if not isinstance(a, float):
             raise TypeError("a must be an integer")
