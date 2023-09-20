@@ -8,5 +8,10 @@ Add Integers
 -2
 >>> print(add_integer(3))
 101
+>>> a = 4
+>>> print(int(a))
+4
+>>> print(type(a))
+<class 'int'>
 >>> print(add_integer(2, 5))
 7
