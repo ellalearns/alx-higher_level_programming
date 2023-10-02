@@ -7,6 +7,9 @@ from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
+    """
+    wahala for who no write docs
+    """
     def setUp(self):
         """
         more docs inu fdr dfgr go
