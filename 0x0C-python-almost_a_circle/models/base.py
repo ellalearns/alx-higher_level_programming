@@ -5,6 +5,9 @@ the base class
 
 
 class Base:
+    """
+    base class, innit?
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
