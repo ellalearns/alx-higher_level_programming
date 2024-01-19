@@ -16,5 +16,4 @@ if __name__ == "__main__":
         while (index < len(argv)):
             total += int(argv[index])
             index += 1
-    
     print("{}".format(total))
