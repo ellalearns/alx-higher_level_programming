@@ -3,7 +3,7 @@
 if __name__ == "__main__":
     """
     imports funcs from calculator_1 py
-    to use in this file
+    add, sub, mul, div
     """
     from calculator_1 import add, sub, mul, div
 
