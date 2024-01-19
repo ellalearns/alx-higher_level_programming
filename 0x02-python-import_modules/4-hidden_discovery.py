@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     """prints from hidden pyc"""
-    import "hidden_4"
+    import hidden_4
 
     files = dir(hidden_4)
     for file in files:
