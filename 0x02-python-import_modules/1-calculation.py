@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """
-    imports funcs from calculator_1 py
-    add, sub, mul, div
-    """
+    """imports funcs from calculator_1 py"""
     from calculator_1 import add, sub, mul, div
 
     a = 10

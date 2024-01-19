@@ -10,12 +10,11 @@ if __name__ == "__main__":
     total = 0
 
     if len(argv) > 1:
-        infinite_number = argv[1]
         total = 0
-        index = 0
+        index = 1
 
-        while (index < len(infinite_number)):
-            total += int(str(infinite_number[index]))
+        while (index < len(argv)):
+            total += int(argv[index])
             index += 1
     
     print("{}".format(total))
