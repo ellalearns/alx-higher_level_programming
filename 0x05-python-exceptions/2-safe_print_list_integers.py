@@ -11,9 +11,11 @@ def safe_print_list_integers(my_list=[], x=0):
     list_elems = 0
     for elem in my_list:
         list_elems += 1
+    
+    out_of_range = False
 
     if x > list_elems:
-        raise IndexError("list index out of range")
+        out_of_range = True
 
     while another_one < x:
         try:
@@ -23,5 +25,7 @@ def safe_print_list_integers(my_list=[], x=0):
             pass
         finally:
             another_one += 1
+    if out_of_range is True:
+        raise IndexError("list index out of range")
     print("")
     return counter
