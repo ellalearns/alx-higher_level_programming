@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def raise_esception_msg(message=""):
+def raise_exception_msg(message=""):
     """
     raises an exception with a message
     """
