@@ -11,7 +11,7 @@ def safe_print_list_integers(my_list=[], x=0):
     list_elems = 0
     for elem in my_list:
         list_elems += 1
-    
+
     out_of_range = False
 
     if x > list_elems:
