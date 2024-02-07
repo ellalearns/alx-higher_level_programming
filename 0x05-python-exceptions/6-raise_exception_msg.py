@@ -4,4 +4,4 @@ def raise_esception_msg(message=""):
     """
     raises an exception with a message
     """
-    raise NameError("C is fun")
+    raise NameError(message)
