@@ -1,14 +1,5 @@
 Python 3.11.5 (main, Aug 30 2023, 00:13:08) [Clang 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0 on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> from 0-add_integer.py import add_integer
-  File "<stdin>", line 1
-    from 0-add_integer.py import add_integer
-         ^
-SyntaxError: invalid syntax
->>> add_integer = __import__("0-add_integer.py").add_integer
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ModuleNotFoundError: No module named '0-add_integer.py'; '0-add_integer' is not a package
 >>> add_integer = __import__("0-add_integer").add_integer
 >>> add_integer(2, 3)
 5
