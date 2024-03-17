@@ -10,6 +10,7 @@ def matrix_divided(matrix, div):
     divides all the elements of a matrix
     all elements are lists of integers
     """
+    terror = "matrix must be a matrix (list of lists) of integers/floats"
     new_matrix = []
 
     if matrix == []:
@@ -18,13 +19,11 @@ def matrix_divided(matrix, div):
 
     for elem in matrix:
         if isinstance(elem, list) is not True:
-            raise TypeError("matrix must be a matrix \
-                            (list of lists) of integers/floats")
+            raise TypeError(terror)
         else:
             for num in elem:
                 if not (isinstance(num, int)) and not (isinstance(num, float)):
-                    raise TypeError("matrix must be a matrix \
-                                    (list of lists) of integers/floats")
+                    raise TypeError(terror)
 
     original_len = len(matrix[0])
 
