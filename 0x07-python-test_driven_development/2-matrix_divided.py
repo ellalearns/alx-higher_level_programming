@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 
 """
 divides all the elements in a matrix
