@@ -1,0 +1,16 @@
+ella@ellasUbuntu:~/alx/alx-higher_level_programming/0x07-python-test_driven_development$ python3
+Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> firstLast = __import__("3-say_my_name").say_my_name
+>>> firstLast("david")
+david 
+>>> firstLast("david", "king")
+david king
+>>> firstLast(3, "hiii")
+Traceback (most recent call last):
+  ...
+TypeError: first_name must be a string
+>>> firstLast("george", 7)
+Traceback (most recent call last):
+  ...
+TypeError: last_name must be a string
