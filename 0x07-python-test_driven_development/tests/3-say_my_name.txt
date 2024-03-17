@@ -3,9 +3,9 @@ Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> firstLast = __import__("3-say_my_name").say_my_name
 >>> firstLast("david")
-david 
+My name is david 
 >>> firstLast("david", "king")
-david king
+My name is david king
 >>> firstLast(3, "hiii")
 Traceback (most recent call last):
   ...
