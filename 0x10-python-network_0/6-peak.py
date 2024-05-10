@@ -17,13 +17,26 @@ def find_peak(list_of_integers=[]):
         return None
 
     while (count < len_list):
-        if nlist[count] > nlist[count - 1] and nlist[count] > nlist[count + 1]:
-            peaks.append(nlist[count])
+        current = nlist[count]
+        prev = nlist[count - 1]
+        if count >= len(nlist) - 1:
+            next = nlist[count]
+        else:
+            next = nlist[count + 1]
+
+        if current >= prev and current >= next:
+            peaks.append(current)
             count += 2
         else:
             count += 1
 
-    if nlist.__len__() == 1:
-        return nlist[0]
+    if peaks.__len__() == 1:
+        return peaks[0]
     else:
-        return nlist
+        max = peaks[0]
+        count = 0
+        while count < len(peaks):
+            if peaks[count] > max:
+                max = peaks[count]
+            count += 1
+        return max
