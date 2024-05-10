@@ -33,10 +33,4 @@ def find_peak(list_of_integers=[]):
     if peaks.__len__() == 1:
         return peaks[0]
     else:
-        max = peaks[0]
-        count = 0
-        while count < len(peaks):
-            if peaks[count] > max:
-                max = peaks[count]
-            count += 1
-        return max
+        return max(peaks)
