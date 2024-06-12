@@ -13,5 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
   $('DIV#clear_list').on('click', function () {
     $(domToMod).empty();
   });
-
 });
