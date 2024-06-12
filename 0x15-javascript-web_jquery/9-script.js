@@ -1,7 +1,7 @@
 $.ajax({
-    url: "https://hellosalut.stefanbohacek.dev/?lang=fr",
-    type: "GET",
+    url: 'https://hellosalut.stefanbohacek.dev/?lang=fr',
+    type: 'GET',
     success: function(data) {
-        $("DIV#hello").text(data.hello);
+        $('DIV#hello').text(data.hello);
     }
 });
