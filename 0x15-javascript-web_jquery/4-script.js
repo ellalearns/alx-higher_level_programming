@@ -1,6 +1,10 @@
 $('DIV#toggle_header').on('click', function () {
   if ($('header').hasClass('red'))
-  $('header').removeClass('red').addClass('green');
+  {
+    $('header').removeClass('red').addClass('green');
+  }
   else
-  $('header').removeClass('green').addClass('red');
+  {
+    $('header').removeClass('green').addClass('red');
+  }
 });
