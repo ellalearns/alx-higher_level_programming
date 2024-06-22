@@ -4,5 +4,5 @@
 -- db name is arg in ext command
 SELECT `score`, COUNT(`score`) AS `number`
 FROM second_table
-GROUP BY `number`
+GROUP BY `score`
 ORDER BY `number` DESC;
