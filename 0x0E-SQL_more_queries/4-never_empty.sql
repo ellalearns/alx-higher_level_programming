@@ -1,0 +1,6 @@
+-- create a table containing a column with a default value
+-- db name is arg in ext command
+CREATE TABLE IF NOT EXISTS `id_not_null` (
+    `id` INT DEFAULT 1,
+    `name` VARCHAR(256)
+);
